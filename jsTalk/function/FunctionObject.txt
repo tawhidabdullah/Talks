@@ -1,0 +1,2 @@
+The Function constructor creates a new Function object. Calling the constructor directly can create functions dynamically, 
+but suffers from security and similar (but far less significant) performance issues to eval. However, unlike eval, the Function constructor creates functions which execute in the global scope only.

@@ -1,0 +1,37 @@
+
+// first class function 
+
+In JavaScript, functions are first-class objects, because they can have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called. In brief, they are Function objects.
+
+
+
+
+// Functions can be stored in three ways:
+
+store in a variable : let fn = function doSomething() {}
+store in an object : let obj = { doSomething : function(){} }
+store in an array : arr.push(function doSomething() {})
+
+
+
+//Function as an argument
+the function (add,multiply) is sent as an argument to doCoolStuff().
+
+function multiply(x,y){
+	return x * y
+}
+
+function add(x,y){
+	return x + y
+}
+
+function doCoolStuff(callback){
+	return callback(3,5); 
+}
+
+console.log(doCoolStuff(add));
+
+A callback is a function passed as an argument to another function.
+
+
+

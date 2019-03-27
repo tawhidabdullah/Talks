@@ -1,0 +1,83 @@
+   ========================= scope in javascript ==================================
+
+  What is scope ? 
+
+ =>>  we defined "scope" as the set of rules that govern how the Engine can look up a variable by its identifier name 
+
+
+
+// lexical scope 
+
+A lexical scope in Javascript means that a variable defined outside a function can be accessible inside another function defined after the variable declaration. But the opposite is not true, the variables defined inside a function will not be accessible outside that function.
+
+
+function outerFuntion() {
+  var x = 'tawhid Abdullah'; 
+  console.log(typeof y); // 
+
+  function innerFunction(){
+
+    var y = 'superCool'; 
+    console.log(x); // 
+    console.log(typeof z) // 
+
+    function secondInner(){
+    	console.log(y); // 
+    	var z = 'cool'
+    }
+    secondInner(); 
+  }
+  innerFunction(); 
+}
+
+outerFuntion(); 
+
+
+
+
+
+
+ A globally-scoped variable /////////////////////
+
+// global scope
+var a = 1;
+
+function one() {
+  console.log(a); // logs '1'
+}
+
+
+///////////// local scope
+
+Local scope
+
+// global scope
+var a = 1; 
+
+function two(a) { // passing (a) makes it local scope
+  console.log(a); // logs the given argument, not the global value of '1'
+}
+
+two(a);
+
+
+// local scope again
+function three() {
+  var a = 3;
+  console.log(a); // logs '3'
+}
+
+
+
+
+// block scope 
+
+var a = 1;
+
+function one() {
+  if (true) {
+    let a = 4;
+  }
+
+  console.log(a); // logs '1' because the 'let' keyword uses block scoping
+}

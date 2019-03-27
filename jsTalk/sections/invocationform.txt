@@ -1,0 +1,60 @@
+//////////////////////////////    invocatoin form     /////////////////////////////////////////
+
+
+. There are 4 ways to call a function 
+	.Function form 
+		.functionObject(arguments);
+	.Method form
+		.Object.methodName(arguments)
+		.Object['methodName'](arguments)
+	.constructor form
+		.new FunctionObject(aguments)
+	.apply form
+		.functionObject.apply(thisObject , [arguments])			
+
+
+
+
+
+// Method form 
+
+
+const obj = {
+	printSomething: function(x){
+		// function body 
+		return x ; 
+	}
+}	
+
+obj.printSomething('x'); 
+
+
+. when a function is called in the method form, this is set to that thisObject , the object contianing the function.
+. this allows method to have a reference of  the obejct .
+
+
+// function form 
+
+functionObject(arguments)
+
+.When a functin is called in the function form, this is set to the undefined 
+. an inner function does not get access to the outer this 
+
+
+// constructor form 
+
+
+new FunctoinValue(agruments); 
+
+
+.when a funcion is called with the new operator , a new object is created and assigned to this.
+. if there is not an explicit return value , then the this will be returnd 
+
+
+// apply form 
+
+functionObject.apply(thisObject, argumetns); 
+
+
+.a function's apply or call or bind method allows for calling the function, explicitly specifying thisObject.
+.it can also take an array of parameters or a sequence of parameters 

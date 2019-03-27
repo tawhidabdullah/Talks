@@ -1,0 +1,55 @@
+Pure Functions
+A pure function is a function which:
+
+Given the same input, will always return the same output.Produces no side effects.
+A pure function produces no side effects, which means that it can’t alter any external state.
+
+Immutability JavaScript’s object arguments are references, which means that if a function were to mutate
+a property on an object or array parameter, that would mutate state that is accessible outside the function.
+Pure functions must not mutate external state.
+
+
+
+
+// code which is producing side effects 
+
+
+
+
+//impure function
+var name = 'Tawhid Abdullah'; 
+
+
+function greet(){
+	console.log('Hi, ' + name); 
+}
+
+greet(); // Hi, Tawhid Abdullah
+
+name = 'The coolest'; 
+greet(); // Hi, The Coolest
+
+
+
+// pure function
+
+function greet(name){
+	return 'Hi, ' + name; 
+}; 
+
+console.log(greet('Tawhid Abdullah')); // Hi, Tawhid Abdullah
+
+console.log(greet('The coolest')); // Hi, The coolest 
+
+
+
+
+function fancy(x){
+	x = null; 
+	return x; 
+}; 
+
+var name = 'Tawhid Abdullah'; 
+console.log(fancy(name)); // 
+name = 'The coolest'; 
+console.log(fancy(name)); // 

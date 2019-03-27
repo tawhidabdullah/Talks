@@ -1,0 +1,43 @@
+var names = ['zero','one','two','three','four','five','six','seven','eight','nine'];
+
+var printDigit = function(number){
+	return names[number]; 
+}; 
+
+
+console.log(printDigit(0)): // zero 
+
+
+
+
+var printDigit = function(number){
+	var names = ['zero','one','two','three','four','five','six','seven','eight','nine'];
+	return names[number]; 
+}; 
+
+
+console.log(printDigit(0)): // zero 
+
+
+
+// decent but not great code 
+var printDigit = function(number){
+	var names = ['zero','one','two','three','four','five','six','seven','eight','nine'];
+	return names[number]; 
+}; 
+
+
+console.log(printDigit(0));  // zero 
+
+
+// closure 
+
+var printDigit = (function(number){
+	var names = ['zero','one','two','three','four','five','six','seven','eight','nine'];
+	return function (number){
+		return names[number]; 
+	}; 
+})(); 
+
+
+console.log(printDigit(0));  // zero 

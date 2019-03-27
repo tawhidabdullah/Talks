@@ -1,0 +1,30 @@
+//////////////////////////// two pseudo parameters //////////////////////////////////
+
+
+
+in javascript function we have two pseudo parameters 
+
+		1. arguments
+		2. this 
+
+
+/// arguments 
+==>> When a function is invoked, in addition to it's parameter,it also get's a special parameter called 
+arguments
+
+==>>it contains all of the arguments from the invocation.
+==> it is an array-like objects
+==>> arguments.length is the number of arguments passed.
+==>> weird interaction with parameter 
+
+/// this 
+
+=> the this parameter contains a reference to the object of invocation 
+=> this allows a method to know what object it is concerned with 
+=> this allows single function object to service any functions 
+=> this is key to prototypal inheritance 
+
+
+ 
+
+

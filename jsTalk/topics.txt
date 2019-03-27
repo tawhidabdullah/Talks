@@ -1,0 +1,23 @@
+//////////////    Topics that i will be talk about in jsTalks       ////////////////////////////////
+
+1.function's different form 
+2.Higher Order Functions
+3.Immediately invoked function expressions
+4.why function is so great 
+5.function expression and function statements 
+6.function's psudo parameters 
+8.pure function.
+9.call back 
+10.scope 
+
+
+
+
+
+1.let's talk about Functions
+2.return statements
+3.pure function
+4.scope
+5.two pseudo parameters (arguements and this)
+6.let us to the function form 
+7.invocation
